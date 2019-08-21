@@ -16,7 +16,7 @@
 function sayName(name) {
     console.log(this.name);
     return name;
-}
+};
 sayName("Steve");
 
 // Principle 2
@@ -30,7 +30,7 @@ let myFavorites = {
     favorite: function(){
         console.log(this.city);
     }
-}
+};
 
 // Principle 3
 // object creator
@@ -42,7 +42,7 @@ function HouseHold(houseObj) {
     this.home = function() {
       console.log(this.mop + this.houseObj);
       console.log(this);
-    };
+    }
   }
   
   const broom = new HouseHold('Clean');
